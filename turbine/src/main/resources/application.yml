@@ -1,0 +1,22 @@
+server:
+  port: 8080
+
+
+turbine:
+  app-config: user-service-boot
+#  cluster-name-expression: 'new String("default")'
+  aggregator:
+    cluster-config: USER-SERVICE-BOOT
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
+    register-with-eureka: true
+  instance:
+    preferIpAddress: true
+
+spring:
+  application:
+    name: turbine
+

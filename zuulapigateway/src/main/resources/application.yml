@@ -1,0 +1,27 @@
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
+spring:
+  application:
+    name: zuul-api-gateway
+
+server:
+  port: 8766
+
+zuul:
+  routes:
+#    auth-service:
+#      strip-prefix: false
+#      sensitive-headers: Cookie,Set-Cookie
+#      path: /auth/**
+#      service-id: security-service
+    gallery-service:
+      path: /gallery/**
+      service-id: gallery-service
+    user-service:
+      path: /users-service/**
+      service-id: user-service-boot
+  ignored-services: '*'
