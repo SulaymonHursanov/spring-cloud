@@ -1,3 +1,7 @@
 # spring-cloud
-todo: 1) definition of every project 
-      2) should be defined roadmap to how to deploy or script for deploy
+
+todo: 
+-  definition of every project 
+-  should be defined roadmap to how to deploy or script for deploy
+
+### track progress on trello dashboard (https://trello.com/b/XLmqcWpg/spring-cloud)
