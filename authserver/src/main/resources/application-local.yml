@@ -1,7 +1,7 @@
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://api.starfish24.com:8761/eureka
+      defaultZone: http://localhost:8761/eureka
     register-with-eureka: false
   instance:
     preferIpAddress: true

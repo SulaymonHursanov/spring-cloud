@@ -1,7 +1,7 @@
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://api.starfish24.com:8761/eureka
+      defaultZone: http://localhost:8761/eureka
     register-with-eureka: true
   instance:
     preferIpAddress: true
@@ -14,4 +14,4 @@ security:
     header: Authorization
     prefix: Bearer
     expiration: 86400 # 24*60*60
-    secret: pYcy9gayq4DzjrJV
+    secret: 123
